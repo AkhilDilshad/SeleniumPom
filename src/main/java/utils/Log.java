@@ -13,9 +13,9 @@ public class Log {
 			logger.warn(message);
 		}
 		public static void error(String message) {
-			logger.warn(message);
+			logger.error(message);
 		}
 		public static void debug(String message) {
-			logger.warn(message);
+			logger.debug(message);
 		}
 }
