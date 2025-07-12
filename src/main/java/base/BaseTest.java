@@ -41,7 +41,7 @@ public class BaseTest {
 
 	@AfterMethod
 	public void tearDown(ITestResult result) {
-		if (result.getStatus() == ITestResult.FAILURE) {
+		if (result.getStatus() == ITestResult.FAILURE) { //For taking screenshot 
 			String SSPath = ExtentReportManager.captureSS(driver, "Login Failure");
 			test.fail("Test Failed..Check ScreenShot", MediaEntityBuilder.createScreenCaptureFromPath(SSPath).build());
 		}

@@ -6,8 +6,8 @@
       <class name="tests.LoginTest">
         <methods>
           <include name="setUp"/>
+          <include name="validLogin" invocation-numbers="0 1"/>
           <include name="tearDown"/>
-          <include name="invalidLogin"/>
           <include name="setUpReport"/>
           <include name="tearDownReport"/>
         </methods>
