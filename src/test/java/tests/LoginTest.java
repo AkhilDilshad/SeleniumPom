@@ -39,10 +39,10 @@ public class LoginTest extends BaseTest {
 
 		test.info("Entering Credentials");
 		Log.info("Entering Credentials");
-		loginpage.enterUser("admin@yourstore.com");
-		loginpage.enterPass("admin");
-//		loginpage.enterUser(username);
-//		loginpage.enterPass(password);
+//		loginpage.enterUser("admin@yourstore.com");
+//		loginpage.enterPass("admin");
+		loginpage.enterUser(username);
+		loginpage.enterPass(password);
 		Log.info("Submitting...");
 		test.info("Submitting...");
 		loginpage.login();
